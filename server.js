@@ -137,7 +137,7 @@ function checkNotAuthenticated(req, res, next) {
 }
 
 // Port that the web server should listen on
-const port = 8883; // Choose the port number you want to use
+const port = 3000; // Choose the port number you want to use
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
