@@ -137,8 +137,11 @@ function checkNotAuthenticated(req, res, next) {
 }
 
 // Port that the web server should listen on
-var port = process.env.PORT || 3000;
-server.listen(port);  // cổng này phải giống cổng lên home.ejs // var socket = io("http://192.168.0.1:3000")
+const port = 3000; // Choose the port number you want to use
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+
 ///////////////////////////////LOGIN/////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
